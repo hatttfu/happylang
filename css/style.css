@@ -1,0 +1,908 @@
+/* MY CSS */
+
+/* fonts */
+
+/* jura-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jura-v15-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/jura-v15-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jura-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/jura-v15-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/jura-v15-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/jura-v15-latin_cyrillic-regular.svg#Jura') format('svg'); /* Legacy iOS */
+  }
+  /* jura-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/jura-v15-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/jura-v15-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jura-v15-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/jura-v15-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/jura-v15-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/jura-v15-latin_cyrillic-600.svg#Jura') format('svg'); /* Legacy iOS */
+  }
+  /* jura-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/jura-v15-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/jura-v15-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jura-v15-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/jura-v15-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/jura-v15-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/jura-v15-latin_cyrillic-700.svg#Jura') format('svg'); /* Legacy iOS */
+  }
+
+/* londrina-solid-900 - latin */
+@font-face {
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/londrina-solid-v9-latin-900.eot'); /* IE9 Compat Modes */
+    src: local('Londrina Solid Black'), local('LondrinaSolid-Black'),
+         url('../fonts/londrina-solid-v9-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/londrina-solid-v9-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/londrina-solid-v9-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/londrina-solid-v9-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/londrina-solid-v9-latin-900.svg#LondrinaSolid') format('svg'); /* Legacy iOS */
+  }
+  /* londrina-solid-regular - latin */
+  @font-face {
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/londrina-solid-v9-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Londrina Solid Regular'), local('LondrinaSolid-Regular'),
+         url('../fonts/londrina-solid-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/londrina-solid-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/londrina-solid-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/londrina-solid-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/londrina-solid-v9-latin-regular.svg#LondrinaSolid') format('svg'); /* Legacy iOS */
+  }
+
+/*наследование border-box-а*/
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* background-color: #dff9fb; */
+    /* background-color: #ecf0f1; */
+    background-color:#dfe6e9;
+    /* background-color: #f1f2f6; */
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.wrapper {
+    /* padding: 10px; */
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.header__info{
+    font-size: 18px;
+    line-height: 1.2em;
+    text-align: right;
+}
+
+.phone, .mail {
+    color: #000;
+
+}
+
+.phone:hover {
+    font-weight: 600;
+    /* color: #54A0FF; */
+    font-size: 22px;
+}
+
+.mail:hover {
+    font-weight: 600;
+    /* color: #54A0FF; */
+    font-size: 22px;
+}
+
+.main {
+    padding-top: 70px;
+    /* padding-bottom: 50px; */
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__info {
+    width: 50%;
+}
+
+.section__choices {
+    /* max-width: 500px; */
+    width: 44%;
+    height: 70vh;
+}
+
+.flex-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project{
+    width: 100%;
+    display: none;
+    background-color: #fff;
+    min-height: 400px;
+    border-radius:  .5em  0 .5em .5em ;
+}
+
+.section__container {
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.project_none {
+    display: block;
+}
+
+.nav {
+    width: 15%;
+    align-items: flex-end;
+}
+
+.hamburger {
+    padding: 10px;
+    border-radius: .5em;
+    cursor: pointer;
+    width: 100%;
+    margin-left: auto;
+    /* z-index: 2; */
+}
+
+.hamburger__bg {
+    background-color: #fff;
+    border-radius: 0 .5em .5em 0;
+}
+
+.line{
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    margin: 8px;
+}
+
+.line__colored {
+    background-color: #54A0FF;
+}
+
+.main__info {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.2em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+} 
+
+.main__text {
+    font-size: 24px;
+    line-height: 1.2em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    text-align: justify;
+    width: 70%;
+    color: #fff;
+}
+
+.main__list {
+    list-style-type: disc;
+    font-size: 22px;
+    line-height: 1.2em;
+    padding-left: 40px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    
+}
+
+.opp {
+    color: #fff
+}
+
+.main__list li {
+    color: #341f97;
+    margin: 20px;
+}
+
+
+/* section with choices BEGINNING*/
+
+.section__nav{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.language__choice_container,  .age_choice, .courses_choice {
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.language__choice{
+    padding: 20px 10px;
+    width: 100%;
+    font-size: 24px;
+    border-bottom: .09em solid #54A0FF;
+}
+
+.language__choice_container :hover {
+    font-weight: 600;
+    color: #54A0FF;
+}
+
+.clicked{
+    font-weight: 600;
+    color: #54A0FF; 
+    border-bottom: 1px solid #54A0FF;
+}
+
+.tip{
+    font-size: 18px;
+    padding-top: 1em;
+   
+}
+
+.waiting_img {
+    width: 50%;
+    height: 60%;
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+
+.engcourses, .gercourses {
+    display: none;
+    padding: 2em 2em;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.course_link:hover {
+    font-size: 20px;
+    color: #3177CF;
+    font-weight: 600;
+}
+
+/* section with choices ENDING*/
+
+
+/* АДАПТИВ */
+
+@media (max-width: 1231px ) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .main {
+        padding-bottom: 80px; 
+    }
+    .banner__info {
+        width: 100%;
+    }
+    .section__choices {
+        margin-top: 20px; 
+        width: 70%;
+        height: 70vh;
+    }
+    .main__text_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main__text{
+        width: 50%;
+    }
+    .project {
+        display: block;
+        border-radius:  .5em;
+    }
+    .nav{
+        display: none;
+    }
+    .language__choice {
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 753px ) {
+    .main__text_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main__text{
+        width: 100%;
+    }
+    .language__choice {
+        font-size: 18px;
+        padding: 20px 20px;
+    }
+    .section__choices {
+        width: 85%;
+        height: 75vh;
+    }
+}
+
+@media (max-width: 460px ){
+    .header__container{
+        flex-direction: column;
+        /* justify-content: flex-start; */
+    }
+    .language__choice_container{
+        flex-direction: column;
+        
+    }
+    .language__choice_container li:first-child{
+        margin-bottom: 1em;        
+    }
+    .header__info{
+        text-align: left;
+    }
+}
+
+/* АДАПТИВ */
+
+/* ПОЧЕМУ HAPPYLANG? BEGINNING*/
+
+.span__logo {
+    color: #54A0FF;
+    font-weight: 600;
+}
+
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.fraction {
+    padding: 40px;
+}
+
+.title {
+    
+    font-size: 40px;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    text-transform: uppercase;
+}
+
+.advantages__list {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 80px 80px;
+    width: 90%;
+    
+}
+
+.advantages__title{
+    font-size: 36px;
+    padding-bottom: .5em;
+    border-bottom: .05em solid #54A0FF;
+    /* color: #54A0FF; */
+    /* font-weight: 600; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.advantages__block {
+    display: flex;
+    align-items: center;
+    font-size: 22px;  
+    padding: .5em;  
+}
+
+.advantages__blocks {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: 1fr 1fr; */
+    grid-gap: 4em;
+    /* grid-auto-flow: dense; */
+    justify-items: center;
+}
+
+.advantages__img {
+    width: 170px;
+    height: 170px;
+    margin-right: .8em;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 540px ) {
+    .advantages__img {
+        width: 150px;
+        height: 150px;
+        margin-right: .8em;
+    }
+    .advantages__list {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 460px ){
+    .advantages__block {
+        flex-direction: column;
+        max-width: 200px;
+        text-align: center;
+    }
+    .advantages__blocks{
+        justify-items: flex-start;
+    }
+}
+
+/* АДАПТИВ */
+
+/* ПОЧЕМУ HAPPYLANG? ENDING*/
+
+/* НАШИ КУРСЫ BEGINNING */
+
+.fraction__container{
+    padding: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*width="820" height="725.17352"*/
+
+.slider_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.dots-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.usual {
+    position: relative;
+    width: 100%;
+}
+
+#btn-prev, #btn-next {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: gray;
+    opacity: 0.15;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+#btn-prev:hover, #btn-next:hover {
+    opacity: 0.4;
+}
+
+#btn-next {
+    left: auto;
+    right: 0;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #54A0FF; 
+    margin-right: 1em;
+    /* cursor: pointer; */
+}
+
+.active-dot {
+    background-color: #2400FF;
+}
+
+.dot:last-child{
+    margin-right: 0;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+.slide__text {
+    position: absolute;
+    left: 1.4em;
+    bottom: 1.2em;
+    width: 100%;
+    text-align: center;
+    width: 170px;
+    font-weight: 600;
+    font-size: 36px; 
+    line-height: 1.5em;
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Londrina Solid', cursive;
+}
+
+.slide__text:hover {
+    text-decoration: underline;
+}
+
+.about {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+
+.slider__info {
+    background-color: #fff;
+    padding: 1.5em;
+    text-align: 3left;
+    font-size: 24px;
+    margin-left: 1.5em;
+    border-radius: .5em;
+}
+
+.price {
+    text-align: right;
+    font-size: 32px;
+}
+
+.remark{
+    font-size: 18px;
+}
+
+.business__opp {
+    list-style-type: disc;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 1.2em;
+}
+
+.business__opp li {
+    color: #54A0FF;
+}
+
+span {
+    color: #000;
+}
+
+.past {
+    text-decoration: line-through;
+    font-size: 28px;
+}
+
+.real {
+    color: #54A0FF;
+}
+
+.real:hover {
+    font-weight: 600;
+}
+
+/* АДАПТИВ */
+
+@media  (max-width: 1075px ) {
+    .fraction__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider__info{
+        width: 100%;
+    }    
+}
+
+@media  (max-width: 672px ) {
+    .description {
+        font-size: 20px;
+    }
+    .slider__info{
+        width: 90vw;
+        margin: 0;
+    } 
+    .wrapper {
+        width: 100vw;
+    }
+    .fraction {
+        padding: 0;
+    }
+}
+@media (max-width: 460px ){
+    .slide img {
+        width: 90vw;
+    }
+    .slide__text{
+        font-size: 28px;
+    }
+
+}
+
+/* АДАПТИВ */
+
+/* Наши курсы ENDING */
+
+/* ХОТИТЕ УЧИТЬСЯ С HAPPYLANG? BEGINNING */
+
+.letter{
+    padding-bottom: 80px;
+}
+
+.letter__container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.letter__title h3{
+    font-size: 22px;
+    padding-bottom: .5em;
+}
+
+.letter__img {
+    text-align: center;
+}
+
+.letter__img img{
+    width: 80%;
+    padding: 40px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #54A0FF;
+}
+
+.form {
+    background-color: #fff;
+    padding: 1.5em;
+    text-align: left;
+    width: 300px;
+    margin-left: 1.5em;
+    border-radius: .5em;
+    height: 650px;
+    
+}
+
+.btn {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #54A0FF;
+    border-radius: .3em;
+    border: #54A0FF;
+    width: 100%;
+}
+
+input:hover {
+    border: 1.5px solid #3177CF;
+}
+
+button:hover {
+    background-color: #3177CF;
+}
+
+
+.small {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.star{
+    font-size: 24px;
+    font-weight: 400;
+    color: #053977;
+}
+
+input {
+    width: 250px;
+    height: 35px;
+}
+
+.photo__container {
+    padding: 50px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    /* grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; */
+    /* grid-gap: 1em; */
+    justify-items: center;
+}
+
+/* АДАПТИВ */
+
+@media  (max-width: 1231px ) {
+    .extra_pic{
+        display: none;
+    }
+    .letter__container {
+        justify-content: space-evenly;
+    }
+    .photo__container  {
+        width: 50%;
+    }
+}
+@media (max-width: 878px) {
+    .letter__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form {
+        width: 100%;
+        height: 100%;
+    }
+    .form__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .letter__img, .small{
+        text-align: right;
+    }
+    .photo__container  {
+        width: 100%;
+    }
+}
+@media (max-width: 664px) {
+    .letter__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__container{
+        flex-direction: column;
+    }
+    .letter__img, .small{
+        text-align: left;
+    }
+    .form {
+        width: 300px;
+        height: 650px;
+    }
+    .photo__container{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 460px ){
+    .photo__container  {
+        width: 100vw;
+        display: block;
+    }
+    .photo__container img {
+        width: 100vw;
+        margin-bottom: .5em;
+    }
+}
+
+/* АДАПТИВ */
+
+/* ХОТИТЕ УЧИТЬСЯ С HAPPYLANG? ENDING */
+
+/* FOOTER BEGINNING */
+
+.footer{
+    background-color: #3177CF;
+    color: #fff;
+    font-size: 18px;
+    padding: 3em;
+    line-height: 1.5em;
+}
+
+
+.contacts__info {
+    padding-bottom: 35px;
+    border-bottom: solid 1.1px #000;
+}
+
+.contacts__info, .copyright {
+    padding-left: 25px;
+}
+
+.contacts {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contacts:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 830px) {
+    .wrapper{
+        width: 100%;
+    }
+}
+@media (max-width: 460px ){
+    .footer{
+       padding: 3em 0; 
+    }
+
+}    
+
+/* АДАПТИВ */
+
+/* FOOTER ENDING */
+
